@@ -90,14 +90,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Banco.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmFuncionario_Cadrastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmFuncionario_Cadrastro.Designer.cs">
+      <DependentUpon>FrmFuncionario_Cadrastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFuncionario_Listar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFuncionario_Listar.Designer.cs">
+      <DependentUpon>FrmFuncionario_Listar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPagina_inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPagina_inicial.Designer.cs">
+      <DependentUpon>FrmPagina_inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPagina_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPagina_Login.Designer.cs">
+      <DependentUpon>FrmPagina_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmFuncionario_Listar.resx">
+      <DependentUpon>FrmFuncionario_Listar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPagina_inicial.resx">
+      <DependentUpon>FrmPagina_inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPagina_Login.resx">
+      <DependentUpon>FrmPagina_Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -106,6 +133,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -120,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Apis_s
 {
-    public partial class Form1 : Form
+    public partial class FrmFuncionario_Cadrastro : Form
     {
-        public Form1()
+        public FrmFuncionario_Cadrastro()
         {
             InitializeComponent();
         }
