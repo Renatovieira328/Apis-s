@@ -90,6 +90,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Banco.cs" />
+    <Compile Include="Classes\Cadrastro.cs" />
+    <Compile Include="FrmCadrastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadrastro.Designer.cs">
+      <DependentUpon>FrmCadrastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFuncionario_Cadrastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +123,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCadrastro.resx">
+      <DependentUpon>FrmCadrastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmFuncionario_Listar.resx">
       <DependentUpon>FrmFuncionario_Listar.cs</DependentUpon>
     </EmbeddedResource>

@@ -35,11 +35,10 @@
             this.TsmRelatorio = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmConfiguracoes = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmAjuda = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtEmpresa_nome = new System.Windows.Forms.TextBox();
             this.TxtCep = new System.Windows.Forms.TextBox();
             this.TxtCidade = new System.Windows.Forms.TextBox();
             this.TxtComplemento = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@
             this.TxtLogradouro = new System.Windows.Forms.TextBox();
             this.TxtUF = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -105,14 +105,6 @@
             this.TsmAjuda.Size = new System.Drawing.Size(50, 20);
             this.TsmAjuda.Text = "&Ajuda";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(20, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 149);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -140,12 +132,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Media de Avaliações";
             // 
-            // textBox1
+            // TxtEmpresa_nome
             // 
-            this.textBox1.Location = new System.Drawing.Point(225, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 20);
-            this.textBox1.TabIndex = 5;
+            this.TxtEmpresa_nome.Location = new System.Drawing.Point(225, 58);
+            this.TxtEmpresa_nome.Name = "TxtEmpresa_nome";
+            this.TxtEmpresa_nome.Size = new System.Drawing.Size(156, 20);
+            this.TxtEmpresa_nome.TabIndex = 5;
+            this.TxtEmpresa_nome.Visible = false;
             // 
             // TxtCep
             // 
@@ -193,8 +186,16 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(225, 172);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 20);
+            this.textBox2.Size = new System.Drawing.Size(59, 20);
             this.textBox2.TabIndex = 12;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(20, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(188, 149);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmPagina_inicial
             // 
@@ -208,7 +209,7 @@
             this.Controls.Add(this.TxtComplemento);
             this.Controls.Add(this.TxtCidade);
             this.Controls.Add(this.TxtCep);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtEmpresa_nome);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -216,7 +217,9 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "FrmPagina_inicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pagina Inicial";
+            this.Text = "Sistema - Projeto Integrador";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmPagina_inicial_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -238,7 +241,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtEmpresa_nome;
         private System.Windows.Forms.TextBox TxtCep;
         private System.Windows.Forms.TextBox TxtCidade;
         private System.Windows.Forms.TextBox TxtComplemento;

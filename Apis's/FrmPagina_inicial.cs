@@ -22,5 +22,10 @@ namespace Apis_s
             frmFuncionario_Cadrastro.MdiParent = this;
             frmFuncionario_Cadrastro.Show();
         }
+
+        private void FrmPagina_inicial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
