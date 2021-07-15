@@ -89,8 +89,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Cep.cs" />
     <Compile Include="Classes\Banco.cs" />
     <Compile Include="Classes\Cadrastro.cs" />
+    <Compile Include="Classes\Cliente.cs" />
+    <Compile Include="Classes\Endereco.cs" />
+    <Compile Include="Classes\Funcionario.cs" />
+    <Compile Include="Classes\XmlCep.cs" />
     <Compile Include="FrmCadrastro.cs">
       <SubType>Form</SubType>
     </Compile>

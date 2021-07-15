@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 
 namespace Apis_s.Classes
 {
     class Cadrastro
     {
-        public int IdEmpresa { get; set;}
-        public string Nome { get; set;}
-        public string Telefone { get; set;}
+        public int IdEmpresa { get; set; }
+        public string Nome { get; set; }
+        public string Telefone { get; set; }
         public string Email { get; set; }
         public string Cnpj { get; set; }
         public string Senha { get; set; }
@@ -45,9 +41,9 @@ namespace Apis_s.Classes
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.CommandText = "cadrastrar_empresa";
             cmd.Parameters.AddWithValue("_idEmpresa", 0).Direction = ParameterDirection.Output;
-            cmd.Parameters.AddWithValue("_nome",Nome);
-            cmd.Parameters.AddWithValue("_telefone",Telefone);
-            cmd.Parameters.AddWithValue("_email",Email);
+            cmd.Parameters.AddWithValue("_nome", Nome);
+            cmd.Parameters.AddWithValue("_telefone", Telefone);
+            cmd.Parameters.AddWithValue("_email", Email);
             cmd.Parameters.AddWithValue("_cnpj", Cnpj);
             cmd.Parameters.AddWithValue("_senha", Senha);
             cmd.ExecuteNonQuery();
