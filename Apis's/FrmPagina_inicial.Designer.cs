@@ -37,7 +37,6 @@
             this.TsmAjuda = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.TxtEmpresa_nome = new System.Windows.Forms.TextBox();
             this.TxtCep = new System.Windows.Forms.TextBox();
             this.TxtCidade = new System.Windows.Forms.TextBox();
@@ -45,8 +44,9 @@
             this.TxtBairro = new System.Windows.Forms.TextBox();
             this.TxtLogradouro = new System.Windows.Forms.TextBox();
             this.TxtUF = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -123,71 +123,68 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Endereco";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(225, 149);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Media de Avaliações";
-            // 
             // TxtEmpresa_nome
             // 
+            this.TxtEmpresa_nome.BackColor = System.Drawing.SystemColors.Menu;
+            this.TxtEmpresa_nome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtEmpresa_nome.Location = new System.Drawing.Point(225, 58);
             this.TxtEmpresa_nome.Name = "TxtEmpresa_nome";
-            this.TxtEmpresa_nome.Size = new System.Drawing.Size(156, 20);
+            this.TxtEmpresa_nome.Size = new System.Drawing.Size(156, 13);
             this.TxtEmpresa_nome.TabIndex = 5;
-            this.TxtEmpresa_nome.Visible = false;
             // 
             // TxtCep
             // 
+            this.TxtCep.BackColor = System.Drawing.SystemColors.Menu;
+            this.TxtCep.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtCep.Location = new System.Drawing.Point(225, 100);
             this.TxtCep.Name = "TxtCep";
-            this.TxtCep.Size = new System.Drawing.Size(83, 20);
+            this.TxtCep.Size = new System.Drawing.Size(83, 13);
             this.TxtCep.TabIndex = 6;
             // 
             // TxtCidade
             // 
+            this.TxtCidade.BackColor = System.Drawing.SystemColors.Menu;
+            this.TxtCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtCidade.Location = new System.Drawing.Point(331, 126);
             this.TxtCidade.Name = "TxtCidade";
-            this.TxtCidade.Size = new System.Drawing.Size(105, 20);
+            this.TxtCidade.Size = new System.Drawing.Size(105, 13);
             this.TxtCidade.TabIndex = 7;
             // 
             // TxtComplemento
             // 
+            this.TxtComplemento.BackColor = System.Drawing.SystemColors.Menu;
+            this.TxtComplemento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtComplemento.Location = new System.Drawing.Point(456, 100);
             this.TxtComplemento.Name = "TxtComplemento";
-            this.TxtComplemento.Size = new System.Drawing.Size(77, 20);
+            this.TxtComplemento.Size = new System.Drawing.Size(77, 13);
             this.TxtComplemento.TabIndex = 8;
             // 
             // TxtBairro
             // 
+            this.TxtBairro.BackColor = System.Drawing.SystemColors.Menu;
+            this.TxtBairro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtBairro.Location = new System.Drawing.Point(225, 126);
             this.TxtBairro.Name = "TxtBairro";
-            this.TxtBairro.Size = new System.Drawing.Size(100, 20);
+            this.TxtBairro.Size = new System.Drawing.Size(100, 13);
             this.TxtBairro.TabIndex = 9;
             // 
             // TxtLogradouro
             // 
+            this.TxtLogradouro.BackColor = System.Drawing.SystemColors.Menu;
+            this.TxtLogradouro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtLogradouro.Location = new System.Drawing.Point(314, 100);
             this.TxtLogradouro.Name = "TxtLogradouro";
-            this.TxtLogradouro.Size = new System.Drawing.Size(136, 20);
+            this.TxtLogradouro.Size = new System.Drawing.Size(136, 13);
             this.TxtLogradouro.TabIndex = 10;
             // 
             // TxtUF
             // 
+            this.TxtUF.BackColor = System.Drawing.SystemColors.Menu;
+            this.TxtUF.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtUF.Location = new System.Drawing.Point(442, 126);
             this.TxtUF.Name = "TxtUF";
-            this.TxtUF.Size = new System.Drawing.Size(37, 20);
+            this.TxtUF.Size = new System.Drawing.Size(37, 13);
             this.TxtUF.TabIndex = 11;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(225, 172);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(59, 20);
-            this.textBox2.TabIndex = 12;
             // 
             // pictureBox1
             // 
@@ -197,12 +194,33 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(225, 168);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(124, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Cadrastrar Funcionario";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(375, 168);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 23);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Listar Funcionario";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FrmPagina_inicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(555, 205);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.TxtUF);
             this.Controls.Add(this.TxtLogradouro);
             this.Controls.Add(this.TxtBairro);
@@ -210,7 +228,6 @@
             this.Controls.Add(this.TxtCidade);
             this.Controls.Add(this.TxtCep);
             this.Controls.Add(this.TxtEmpresa_nome);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -218,7 +235,6 @@
             this.Name = "FrmPagina_inicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema - Projeto Integrador";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmPagina_inicial_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -240,7 +256,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TxtEmpresa_nome;
         private System.Windows.Forms.TextBox TxtCep;
         private System.Windows.Forms.TextBox TxtCidade;
@@ -248,6 +263,7 @@
         private System.Windows.Forms.TextBox TxtBairro;
         private System.Windows.Forms.TextBox TxtLogradouro;
         private System.Windows.Forms.TextBox TxtUF;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

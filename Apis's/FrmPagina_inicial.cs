@@ -12,20 +12,32 @@ namespace Apis_s
         private void TsmListar_Click(object sender, EventArgs e)
         {
             FrmFuncionario_Listar frmFuncionario_Listar = new FrmFuncionario_Listar();
-            frmFuncionario_Listar.MdiParent = this;
             frmFuncionario_Listar.Show();
         }
 
         private void TsmCadrastrar_Click(object sender, EventArgs e)
         {
             FrmFuncionario_Cadrastro frmFuncionario_Cadrastro = new FrmFuncionario_Cadrastro();
-            frmFuncionario_Cadrastro.MdiParent = this;
             frmFuncionario_Cadrastro.Show();
         }
 
         private void FrmPagina_inicial_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmFuncionario_Cadrastro frmFuncionario_Cadrastro = new FrmFuncionario_Cadrastro();
+            frmFuncionario_Cadrastro.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmFuncionario_Listar frmFuncionario_Listar = new FrmFuncionario_Listar();
+            frmFuncionario_Listar.ShowDialog();
         }
     }
 }

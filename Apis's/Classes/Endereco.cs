@@ -1,6 +1,6 @@
 ﻿namespace Apis_s.Classes
 {
-    class Endereco
+    public class Endereco
     {
         private readonly int idCliente;
         private readonly int idEmpresa;
@@ -18,7 +18,7 @@
         {
         }
 
-        public Endereco(int idCliente,int idEmpresa,string logradouro, string numero, string complemento, string cep, string bairro, string cidade, string uf)
+        public Endereco(int idCliente, int idEmpresa, string logradouro, string numero, string complemento, string cep, string bairro, string cidade, string uf)
         {
             this.idCliente = idCliente;
             this.idEmpresa = idEmpresa;
@@ -42,7 +42,7 @@
             Uf = uf;
         }
 
-        public void Cadrastrar_Endereco(int IdCliente,int IdEmpresa)
+        public void Cadrastrar_Endereco(int IdCliente, int IdEmpresa)
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
